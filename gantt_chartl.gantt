@@ -1,0 +1,19 @@
+gantt
+    title Master's Thesis Project Execution Plan (PEC 1 to PEC 5)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d/%m
+
+    section PEC 1: Planning
+    Work Plan & Feasibility             :active, pec1, 2026-09-23, 2026-10-07
+
+    section PEC 2: Phase 1
+    State-of-the-Art & Baseline        :crit, pec2, 2026-10-08, 2026-11-04
+
+    section PEC 3: Phase 2
+    GNN, C-mVAE, XAI & Deployment       :crit, pec3, 2026-11-05, 2026-12-02
+
+    section PEC 4: Thesis
+    Thesis Report Closure               :pec4, 2026-12-03, 2027-01-07
+
+    section PEC 5: Defense
+    Slides & Presentation Video        :pec5, 2026-12-03, 2027-01-13

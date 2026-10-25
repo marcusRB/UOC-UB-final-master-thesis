@@ -1,0 +1,122 @@
+\documentclass[ENG,BIB]{TFUOC}%IB: CASTELLÃ€, CAT: CATALÃ€, ENG: ANGLISH
+
+% Paquetes adicionales para imágenes, tablas en landscape y enlaces
+\usepackage{graphicx}
+\usepackage{pdflscape} % Permite páginas horizontales sin errores de compilación
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{eurosym}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{xltabular}   % reemplaza a tabularx + longtable
+\usepackage{array}
+
+\definecolor{headerblue}{RGB}{41, 128, 185}
+\definecolor{lightgrey}{RGB}{245, 247, 250}
+
+\bibliographystyle{apalike}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
+% -- Disable comments in the PDF
+%\usepackage[disable]{todonotes}
+
+\usepackage[colorinlistoftodos, textwidth=3cm]{todonotes}
+\usepackage{pdfcomment}
+
+% Rutas para búsqueda automática de imágenes
+\graphicspath{{images/}{licenc/}}
+
+%Introduce Work Data
+\title{
+	TFM Multimodal Integration Spatial Transcriptomics
+}
+
+\titcrt{
+  	\fontsize{10pt}{5pt}\selectfont                 % Smaller font for the running header
+  	Conditional Geometric Modeling
+}
+
+\author{Student: Marco Russo}
+\date{September 21, 2026}
+
+\nomPDC{Jose Francisco Sanchez-Herrero}
+\nomPRA{David Merino Arranz}
+\titulac{Master's degree in Bioinformatics and Biostatistics}
+\area{Work Area: Omics Data Analysis}
+\idioma{English}
+\credits{15}
+\parcla{Spatial Transcriptomics, Graph Attention Networks (GAT), Conditional Variational Autoencoder (C-mVAE), eXplainable AI (XAI), Biomarkers, Sex-stratified medicine.}
+
+\licenc{ccBy}
+%Possible licenses
+%ccByNcNd
+%ccByNcSa
+%ccByNc
+%ccByNd
+%ccBySa
+%ccBy
+%GNU
+%copyright
+
+
+%%%%%%%%%%
+% Summary in language
+
+\abstractidioma{
+Maximum 250 words, for the purpose, context of application, methodology, results and conclusions of the work.
+
+
+}
+
+% Summary in English.
+\abstractenglish{
+
+This Master's Thesis (TFM) focuses on the field of Omics Data Analysis, specifically addressing the integration of spatial transcriptomics and single-cell RNA sequencing (scRNA-seq). The ultimate goal is to develop and implement a Deep Learning architecture combining Graph Neural Networks (GNN) and Multimodal Variational Autoencoders (VAE). This architecture will be explicitly conditioned by biological sex to model cellular heterogeneity in cardiovascular tissues. Upon completion, the project will deliver a trained model, an extraction of interpretable biomarkers using eXplainable Artificial Intelligence (XAI), and an interactive dashboard for visualization.
+}
+
+\begin{document}
+
+\estructura
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+% Inclusión modular de capítulos
+\newpage
+\input{chapters/01_introduction.tex}
+
+%
+%\newpage
+%\input{chapters/02_state_of_art.tex}
+%
+%\newpage
+%\input{chapters/03a_materials_methods.tex}
+%
+%\newpage
+%\input{chapters/04_results.tex}
+%
+%\newpage
+%\input{chapters/05_conclusions.tex}
+%
+%\newpage
+%\input{chapters/06_glossary.tex}
+%
+
+\newpage
+\input{chapters/07_references.tex}
+
+\newpage
+\appendix
+\input{chapters/08_appendix.tex}
+
+
+
+\end{document}
